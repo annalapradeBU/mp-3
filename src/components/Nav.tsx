@@ -40,8 +40,10 @@ const StyledListItem = styled.li`
     padding: 1%;
     text-align: center;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    /* have used in other classes, makes more dynamic */
     transition: all 0.3s ease;
 
+    /* have used in other classes, makes hovering over it more clear */
     &:hover {
         background-color: #F19C4C;
     }
