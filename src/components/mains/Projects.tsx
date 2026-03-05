@@ -51,7 +51,7 @@ const AchievementList = styled.ul`
     margin: 1% 5% 3% 8%;
 `;
 
-const ChipContainer = styled.div`
+const ChipContainer = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 1.5%;

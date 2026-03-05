@@ -37,7 +37,7 @@ const AchievementList = styled.ul`
     }
 `;
 
-const ChipContainer = styled.div`
+const ChipContainer = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 1.5%;
