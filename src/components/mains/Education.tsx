@@ -80,7 +80,8 @@ const PageTitle = styled.h2`
     margin: 3% 0;
     font-family: 'Playfair Display', serif;
     font-size: calc(22px + 1.5vw); 
-    color: #326273;
+    color: black;
+    text-align: center;
 `;
 
 

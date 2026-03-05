@@ -69,20 +69,6 @@ const StyledMain = styled.main`
         width: 100%;
         max-width: 100%;
     }
-
-    /* for responsive images! */
-    img {
-        max-width: 50%;
-        display: block;
-        margin: 2% auto;
-    }
-
-    h2 {
-        color: black;
-        font-size: calc(2px + 3vw);
-        font-family: 'Playfair Display', serif;
-        text-align: center;
-    }
 `;
 
 
@@ -144,15 +130,11 @@ const router=createBrowserRouter(
 );
 
 
-
 export default function App() {
   return(
-      <>
-      
+      <>   
       <RouterProvider router={router}/>
-
       </>
-
   )
 }
 

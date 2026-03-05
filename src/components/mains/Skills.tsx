@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 const PageTitle = styled.h2`
     text-align: center;
-    margin: 3% 0; /* Converted from 20px */
+    margin: 3% 0;
     font-family: 'Playfair Display', serif;
-    font-size: calc(22px + 1.5vw); /* Responsive font requirement */
-    color: #326273;
+    font-size: calc(22px + 1.5vw); 
+    color: black;
+    text-align: center;
 `;
 
 const SkillCategory = styled.section`

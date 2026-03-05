@@ -5,8 +5,9 @@ const PageTitle = styled.h2`
     text-align: center;
     margin: 3% 0;
     font-family: 'Playfair Display', serif;
-    font-size: calc(22px + 1.5vw);
-    color: #326273;
+    font-size: calc(22px + 1.5vw); 
+    color: black;
+    text-align: center;
 `;
 
 const SkillCategory = styled.section`
@@ -137,7 +138,10 @@ const Controls = styled.div`
     }
 `;
 
-const OutputDisplay = styled.div`
+
+// typescript is yelling at me, so I had to include the type 
+// probably because I use sometimes output text
+const StyledOutput = styled.h3<{ $isNegative?: boolean }>`
     margin: 3% 5%;
     padding: 4%;
     border-top: 2px dashed #7DC4D4;
@@ -146,12 +150,9 @@ const OutputDisplay = styled.div`
     text-align: center;
     color: #326273;
 
-    /* checks if the output has the negative class, applies it if so */
-    /* learned this for my final project in another class to avoid inline stlying because I think it looks gross tbh */
-    &.negative {
-        color: red;
-    }
-`;
+    color: ${(props) => (props.$isNegative ? "red" : "#326273")};
+
+`
 
 export default function Projects() {
     // resplaces document.getElementById().value because React
@@ -294,13 +295,12 @@ export default function Projects() {
                     <button onClick={doClear}>Clear</button>
                 </Controls>
 
-                <OutputDisplay
-                    id="output"
-                    // if number isn't negative, it doesn't get the class, gets empty class instead (so, no class!)
-                    className={isNegative ? "negative" : ""}
-                >
+
+                <StyledOutput $isNegative={isNegative}>
                     {result}
-                </OutputDisplay>
+                </StyledOutput>
+
+
             </SkillCategory>
         </>
     );
