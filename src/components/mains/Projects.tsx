@@ -174,6 +174,7 @@ export default function Projects() {
     function doDivision() {
         const n1 = Number(num1);
         const n2 = Number(num2);
+        // check if divisable by 0, throw an error if not 
         setResult(n2 !== 0 ? n1 / n2 : "Error (Div by 0)");
     }
 
