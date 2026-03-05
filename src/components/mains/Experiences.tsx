@@ -44,17 +44,26 @@ const ChipContainer = styled.div`
     padding: 2% 4% 3% 4%;
 `;
 
-const BaseChip = styled.span`
+// note: I originally had as span, but like.... that didn't make *as much* sense since the skills/whatever can be their own items, not part of a larger text
+const BaseChip = styled.li`
     padding: 1% 3%;
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: 600;
-    font-size: calc(10px + 0.4vw);
-    color: white;
+    font-size: calc(12px + 0.4vw);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    color: white;
+    margin-bottom: 2%;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
 `;
 
-const DesignChip = styled(BaseChip)` background-color: #326273; `;
+/* chip variants */
+
 const DataChip = styled(BaseChip)` background-color: #BF7245; `;
+const DesignChip = styled(BaseChip)` background-color: #326273; `;
 
 const PageTitle = styled.h2`
     text-align: center;

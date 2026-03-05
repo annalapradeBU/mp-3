@@ -67,9 +67,11 @@ const BaseChip = styled.span`
     color: white;
 `;
 
+
+/* chip variants */
 const DevChip = styled(BaseChip)` background-color: #F19C4C; `;
 // not used, but it could be! (if i added more projects)
-/*const DataChip = styled(BaseChip)` background-color: #BF7245; `; */
+/* const DataChip = styled(BaseChip)` background-color: #BF7245; `; */
 const DesignChip = styled(BaseChip)` background-color: #326273; `;
 
 const ExternalChip = styled.a`

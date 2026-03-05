@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+// https://www.w3schools.com/tags/tag_section.asp
+// I've heard its better practice than just a div sometimes for a thematic grouping of content
+// (have also used in other classes... lol. I did a lot of fun css stuff)
 const SkillCategory = styled.section`
     /* this doesn't have to be responsive, right? */
     border-radius: 8px;
