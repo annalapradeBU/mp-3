@@ -182,12 +182,27 @@ export default function Projects() {
         const exponent = Number(num2);
         let temp = 1;
 
-        for (let i = 0; i < Math.abs(exponent); i++) {
+        // check if negative or positive 
+        // note: changed because I used math.abs, and while that's not pow, I'm not taking my chances lol
+        let limit;
+        if (exponent < 0) {
+            limit = -exponent;
+        } else {
+            limit = exponent;
+        }
+
+        for (let i = 0; i < limit; i++) {
             temp *= base;
         }
 
-        // checks if the exponent is negative, then, if it is, 1/temp, if not, result stays the same
-        const finalRes = exponent < 0 ? 1 / temp : temp;
+        // "flip" it if it's negative 
+        let finalRes;
+        if (exponent < 0) {
+            finalRes = 1 / temp;
+        } else {
+            finalRes = temp;
+        }
+
         setResult(finalRes);
     }
 
