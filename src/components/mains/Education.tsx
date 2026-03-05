@@ -60,6 +60,7 @@ const ChipContainer = styled.ul`
 const DevChip = styled.li`
     padding: 1% 3%;
     border-radius: 25px;
+    /* idk if we've used this in class, but I've used it before. changes font thickeness */
     font-weight: 600;
     font-size: calc(12px + 0.4vw);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
