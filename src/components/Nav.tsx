@@ -79,7 +79,7 @@ export default function Nav() {
                 </StyledListItem>
                 
                 <StyledListItem>
-                    <StyledLink to="/education/education.html">Education</StyledLink>
+                    <StyledLink to="/education">Education</StyledLink>
                 </StyledListItem>
                 
                 <StyledListItem>
