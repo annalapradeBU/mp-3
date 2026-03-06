@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const PageTitle = styled.h2`
     text-align: center;
@@ -216,6 +217,10 @@ export default function Projects() {
 
     // check if negative and a number
     const isNegative = typeof result === 'number' && result < 0;
+
+    useEffect(() => {
+                document.title = "Projects | Resume";
+            }, []);
 
 
     return (

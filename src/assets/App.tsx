@@ -88,7 +88,7 @@ function Root(){
           />
 
           <Route 
-          path="/education" 
+          path="/education/education.html" 
           element={<Education />}
           />
 

@@ -1,8 +1,12 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 
 // https://www.w3schools.com/tags/tag_section.asp
 // I've heard its better practice than just a div sometimes for a thematic grouping of content
 // (have also used in other classes... lol. I did a lot of fun css stuff)
+
+
+
 const SkillCategory = styled.section`
     /* this doesn't have to be responsive, right? */
     border-radius: 8px;
@@ -11,6 +15,7 @@ const SkillCategory = styled.section`
     background-color: white; 
     /* used in prior classes */ 
     box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+
 `;
 
 const BaseHeader = styled.h3`
@@ -86,8 +91,19 @@ const PageTitle = styled.h2`
 
 
 export default function Education() {
+
+    useEffect(() => {
+        document.title = "Education | Resume";
+    }, []);
+
+
     return (
         <>
+
+            
+
+            <title>Home | Resume</title>
+
             <PageTitle>Academic Background</PageTitle>
 
             <SkillCategory>
@@ -112,6 +128,7 @@ export default function Education() {
                     </ChipContainer>
                 </EduDetails>
             </SkillCategory>
+            
         </>
     );
 }

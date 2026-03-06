@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const PageTitle = styled.h2`
     text-align: center;
@@ -67,6 +68,11 @@ const FactText = styled.p`
 
 
 export default function Extras() {
+    
+    useEffect(() => {
+            document.title = "Extras | Resume";
+        }, []);
+
     return (
         <>
             <PageTitle>Beyond the Code</PageTitle>

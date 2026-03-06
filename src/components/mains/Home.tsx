@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const PageTitle = styled.h2`
     text-align: center;
@@ -86,6 +87,10 @@ const HomeContent = styled.div`
 `;
 
 export default function Home() {
+    useEffect(() => {
+            document.title = "Home | Resume";
+        }, []);
+
     return (
         <>
             <PageTitle>Home</PageTitle>

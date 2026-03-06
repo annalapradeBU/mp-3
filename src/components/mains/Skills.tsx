@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const PageTitle = styled.h2`
     text-align: center;
@@ -63,6 +64,10 @@ const DesignChip = styled(BaseChip)` background-color: #326273; `;
 
 
 export default function Skills() {
+    useEffect(() => {
+                document.title = "Skills | Resume";
+            }, []);
+
     return (
         <>
             <PageTitle>Technical Skills</PageTitle>

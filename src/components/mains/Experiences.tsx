@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const SkillCategory = styled.section`
     border-radius: 8px;
@@ -76,6 +77,10 @@ const PageTitle = styled.h2`
 
 
 export default function Experiences() {
+    useEffect(() => {
+            document.title = "Experience | Resume";
+        }, []);
+
     return (
         <>
             <PageTitle>Professional Experience</PageTitle>
